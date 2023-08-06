@@ -1,0 +1,72 @@
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    margin-top: 6px;
+    background-color: rgb(96, 93, 93);
+  }
+  
+  .skill-box .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    background: rgb(134, 231, 255);
+    animation: progress 0.9s ease-in-out forwards;
+    opacity: 0;
+  }
+  .fontcolor {
+    color: rgb(134, 231, 255);
+  }
+  .skill-per.ninty {
+    width: 90%;
+    animation-delay: 0.5s;
+  }
+  .skill-per.eighty {
+    width: 80%;
+    animation-delay: 0.5s;
+  }
+  .skill-per.seventy {
+    width: 70%;
+    animation-delay: 0.5s;
+  }
+  .skill-per.sixty {
+    width: 60%;
+    animation-delay: 0.5s;
+  }
+  .skill-per.fifty {
+    width: 50%;
+    animation-delay: 0.5s;
+  }
+  @keyframes progress {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .lineafter{
+    color: #84d7ff;
+  }
+  .tech-stackIcon{
+    width: 1.2rem;
+  }
+  .circle-background{
+    background-color: white;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem 0.4rem;
+  }
+  .container-icons{
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+  }

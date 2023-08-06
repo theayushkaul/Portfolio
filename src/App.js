@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Home from "./Components/Home/Home";
+import About from "./Components/About/About";
+import Navbar from "./Components/Navbar/Navbar";
+import Projects from "./Components/Project/Projects";
+import Resume from "./Components/Resume/Resume";
+import Contact from "./Components/Contact/Contact";
+import React, { useState } from 'react'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 function App() {
+  const[state,setState] = useState(true)
+  function changeState(nav) {
+    setState(nav);
+    console.log(state);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+          <Navbar changeState = {changeState}/>
+          <Routes>
+            <Route exact path="/" element={<Home state = {state}/>} />
+            <Route exact path="/about" element={<About state = {state}/>} />
+            <Route exact path="/resume" element={<Resume state = {state}/>} />
+            <Route exact path="/projects" element={<Projects state = {state}/>} />
+            <Route exact path="/contact" element={<Contact state = {state}/>} />
+          </Routes>
+        </BrowserRouter>
+    </>
   );
 }
 

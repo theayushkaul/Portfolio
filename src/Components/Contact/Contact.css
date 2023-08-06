@@ -1,0 +1,16 @@
+.smallBox{
+    background-color: rgba(1,1,1,0.6);
+    border-radius: 10px;
+    height: 140px;
+    box-sizing: border-box;
+}
+.darkdarkdark {
+    background-color: rgba(0, 0, 0, 0.854);
+    color: white;
+}
+.bg-teal{
+    background-color: teal;
+    margin: 20px auto;
+    height: 3rem;
+    text-align: center;
+}
