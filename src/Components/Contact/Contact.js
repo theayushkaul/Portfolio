@@ -9,27 +9,27 @@ function Contact({ state }) {
       <div className="glass-box">
         <h1 className='text-4xl w-56 font-bold mb-10'>Contact Me</h1>
         <div className="contact-box">
-          <div className="flex flex-col lg:flex-row justify-center">
-            <div className="smallBox py-5 m-6 md:w-80">
+          <div className="flex flex-col gap-3 lg:flex-row justify-center">
+            <div className="smallBox py-5 w-full lg:w-10/12">
               <div className="flex">
-                <MdLocationOn className='text-3xl ml-6 mr-3' />
-                <h1 className='text-2xl font-bold text-left'>My Address</h1>
+                <MdLocationOn className='text-2xl ml-3 mr-3 sm:text-3xl' />
+                <h1 className='text-xl font-bold text-left sm:text-2xl'>My Address</h1>
               </div>
-              <p className='mt-5 text-left px-10 cursor-pointer'>New Delhi, India</p>
+              <p className='mt-5 text-left px-4 cursor-pointer text-sm'>New Delhi, India</p>
             </div>
-            < div className="smallBox py-5 m-6 md:w-80">
+            < div className="smallBox py-5 w-full lg:w-10/12">
               <div className="flex">
-                <FiMail className='text-3xl ml-6 mr-3' />
-                <h1 className='text-2xl font-bold text-left'>Email Me</h1>
+                <FiMail className='text-2xl sm:text-3xl ml-4 mr-3' />
+                <h1 className='text-xl sm:text-2xl font-bold text-left'>Email Me</h1>
               </div>
-              <p className=' mt-5 text-left px-10'><a href="mailto:theayushkaul@gmail.com" className='varela hover:text-teal-400'>theayushkaul@gmail.com</a></p>
+              <a href="mailto:theayushkaul@gmail.com" className='varela text-sm hover:text-teal-400 flex px-4 mt-5'>theayushkaul@gmail.com</a>
             </div>
-            < div className="smallBox py-5 m-6 md:w-80">
+            < div className="smallBox py-5 w-full lg:w-10/12">
               <div className="flex">
-                <FiShare2 className='text-2xl ml-6 mr-3' />
-                <h1 className='text-2xl font-bold text-left'>Social Profiles</h1>
+                <FiShare2 className='text-xl sm:text-2xl ml-4 mr-3' />
+                <h1 className='text-xl sm:text-2xl font-bold text-left'>Social Profiles</h1>
               </div>
-              <div className='flex gap-3 mt-5 px-10 text-left'>
+              <div className='flex gap-3 mt-5 px-5 text-left'>
               <a href="http://github.com/theayushkaul" target="_blank" rel="noopener noreferrer"><AiFillGithub className='hover:text-teal-400 cursor-pointer text-2xl hover-effect'/></a>
                 <a href="https://www.linkedin.com/in/ayush-kaul-84a959227/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin className='hover:text-teal-400 cursor-pointer text-2xl hover-effect' /></a>
                 <a href="http://instagram.com/theayushkaul" target="_blank" rel="noopener noreferrer"><AiOutlineInstagram className='hover:text-teal-400 cursor-pointer text-2xl hover-effect' /></a>
