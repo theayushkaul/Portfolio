@@ -12,27 +12,27 @@ function Contact({ state }) {
           <div className="flex flex-col lg:flex-row justify-center">
             <div className="smallBox py-5 m-6 md:w-80">
               <div className="flex">
-                <MdLocationOn className='text-3xl mx-6' />
+                <MdLocationOn className='text-3xl ml-6 mr-3' />
                 <h1 className='text-2xl font-bold text-left'>My Address</h1>
               </div>
-              <p>New Delhi, India</p>
+              <p className='mt-5 text-left px-10 cursor-pointer'>New Delhi, India</p>
             </div>
             < div className="smallBox py-5 m-6 md:w-80">
               <div className="flex">
-                <FiMail className='text-3xl mx-6' />
+                <FiMail className='text-3xl ml-6 mr-3' />
                 <h1 className='text-2xl font-bold text-left'>Email Me</h1>
               </div>
-              <p className=' mt-5 px-18'><a href="mailto:theayushkaul@gmail.com" className='varela'>theayushkaul@gmail.com</a></p>
+              <p className=' mt-5 text-left px-10'><a href="mailto:theayushkaul@gmail.com" className='varela hover:text-teal-400'>theayushkaul@gmail.com</a></p>
             </div>
             < div className="smallBox py-5 m-6 md:w-80">
               <div className="flex">
-                <FiShare2 className='text-3xl mx-6' />
+                <FiShare2 className='text-2xl ml-6 mr-3' />
                 <h1 className='text-2xl font-bold text-left'>Social Profiles</h1>
               </div>
-              <div className='flex gap-3 mt-5 px-20'>
-                <AiFillGithub className='hover:text-teal-400 cursor-pointer text-2xl' />
-                <AiFillLinkedin className='hover:text-teal-400 cursor-pointer text-2xl' />
-                <AiOutlineInstagram className='hover:text-teal-400 cursor-pointer text-2xl' />
+              <div className='flex gap-3 mt-5 px-10 text-left'>
+              <a href="http://github.com/theayushkaul" target="_blank" rel="noopener noreferrer"><AiFillGithub className='hover:text-teal-400 cursor-pointer text-2xl hover-effect'/></a>
+                <a href="https://www.linkedin.com/in/ayush-kaul-84a959227/" target="_blank" rel="noopener noreferrer"><AiFillLinkedin className='hover:text-teal-400 cursor-pointer text-2xl hover-effect' /></a>
+                <a href="http://instagram.com/theayushkaul" target="_blank" rel="noopener noreferrer"><AiOutlineInstagram className='hover:text-teal-400 cursor-pointer text-2xl hover-effect' /></a>
               </div>
             </div>
           </div>

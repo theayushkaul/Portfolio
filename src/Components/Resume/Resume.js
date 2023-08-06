@@ -5,6 +5,7 @@ import { FaGraduationCap } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import resume from "../../assets/Resume.pdf"
 import { BiSolidDownload } from "react-icons/bi";
+import "./resume.css"
 function Resume({ state }) {
   return (
     <div className={state ? "text-center py-12 bg-gray-900" : "hidden"} style={{ width: "100%" }}>
@@ -23,6 +24,7 @@ function Resume({ state }) {
               contentStyle={{ background: 'rgba(0, 0, 0, 0.500)', color: 'white'}}
               contentArrowStyle={{ borderRight: '7px solid white' }}
               date="2018 - 2019"
+              dateClassName='leftit'
               iconStyle={{ background: 'teal', color: 'white' }}
               icon={<FaGraduationCap />}
             >
