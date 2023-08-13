@@ -24,7 +24,6 @@ function Resume({ state }) {
               contentStyle={{ background: 'rgba(0, 0, 0, 0.500)', color: 'white'}}
               contentArrowStyle={{ borderRight: '7px solid white' }}
               date="2018 - 2019"
-              dateClassName='leftit'
               iconStyle={{ background: 'teal', color: 'white' }}
               icon={<FaGraduationCap />}
             >
