@@ -5,6 +5,7 @@ import Projects from "./Components/Project/Projects";
 import Resume from "./Components/Resume/Resume";
 import Contact from "./Components/Contact/Contact";
 import React, { useState } from 'react'
+import ScrollToTop from "./ScrollToTop";
 import {
   BrowserRouter,
   Routes,
@@ -20,6 +21,7 @@ function App() {
     <>
     <BrowserRouter>
           <Navbar changeState = {changeState}/>
+          <ScrollToTop>
           <Routes>
             <Route exact path="/" element={<Home state = {state}/>} />
             <Route exact path="/about" element={<About state = {state}/>} />
@@ -27,6 +29,7 @@ function App() {
             <Route exact path="/projects" element={<Projects state = {state}/>} />
             <Route exact path="/contact" element={<Contact state = {state}/>} />
           </Routes>
+          </ScrollToTop>
         </BrowserRouter>
     </>
   );
